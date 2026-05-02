@@ -1,12 +1,9 @@
 //rafce
 import React, { useRef, useEffect } from 'react'
 import { Grid } from "@material-ui/core";
-import { PushToTalkButton, PushToTalkButtonContainer, ErrorPanel } from '@speechly/react-ui';
 import Details from './components/Details/Details'
 import Main from './components/Main/Main'
 import useStyles from './styles';
-
-import { SpeechState, useSpeechContext } from "@speechly/react-client";
 
 const App = () => {
     const classes = useStyles();
@@ -38,10 +35,6 @@ const App = () => {
                     <Details title="Expense" />
                 </Grid>
             </Grid>
-            <PushToTalkButtonContainer>
-                <PushToTalkButton />
-                <ErrorPanel />
-            </PushToTalkButtonContainer>
         </div>
     )
 }
